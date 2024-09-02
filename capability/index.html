@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="/images/MRTex-logo.jpg" type="image/jpeg">
+    <link rel="icon" href="/images/MRTex.png" type="image/jpeg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <title>Team Experience with Renowned Brands - MR Tex</title>
@@ -103,6 +103,38 @@
             text-decoration: underline;
         }
 
+        .button-link {
+            display: inline-block;
+            padding: 8px 12px;
+            border: 1px solid #000;
+            border-radius: 3px;
+            background-color: #f0f0f0;
+            text-decoration: none;
+            color: #000;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-link:hover {
+            background-color: #e0e0e0; /* Darker background color on hover */
+        }
+
+        .gradient-link {
+            display: inline-block;
+            padding: 8px 12px;
+            background-image: linear-gradient(to right, #3498db, #e74c3c);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.4s, color 0.4s;
+        }
+
+        .gradient-link:hover {
+            background-image: linear-gradient(to right, #e74c3c, #3498db);
+            color: #fff;
+            text-decoration: none;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
         /* Media query for smaller screens */
         @media screen and (max-width: 768px) {
             #welcome-text {
@@ -126,25 +158,6 @@
                 height: 150px;
             }
         }
-
-        /* Button styling to match home page */
-        .button-link {
-            display: inline-block;
-            padding: 10px 20px; /* Adjust padding for consistency */
-            border: 1px solid transparent;
-            border-radius: 5px; /* Adjust border-radius to match home page buttons */
-            background: linear-gradient(to right, #3498db, #e74c3c);
-            text-decoration: none;
-            color: #fff;
-            font-size: 16px; /* Adjust font-size for consistency */
-            font-weight: bold; /* Match font-weight if needed */
-            transition: background 0.3s ease, border-color 0.3s ease;
-        }
-
-        .button-link:hover {
-            background: linear-gradient(to right, #e74c3c, #3498db);
-            border-color: #fff;
-        }
     </style>
 </head>
 <body>
@@ -156,7 +169,7 @@
                 </a>
             </div>
             <div id="welcome-text">
-                <h2>Team Experience with Renowned Brands</h2>
+                <h1>Team Experience with Renowned Brands</h1>
             </div>
         </div>
     </header>
@@ -196,10 +209,15 @@
         </div>
     </section>
 
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>We would love to hear from you! Connect with us on <a href="https://wa.me/+8801712548608" class="button-link">WhatsApp</a> or drop us an <a href="mailto:inquiries@mrtex.info" class="button-link">Email</a>.</p>
-        <p>House # 05 (2nd Floor), Road # 18, Sector # 10, Uttara, Dhaka-1230, Bangladesh</p>
-    </section>
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>We would love to hear from you! Connect with us on 
+        <a href="https://wa.me/+8801712548608" class="gradient-link">WhatsApp</a> 
+        or drop us an 
+        <a href="mailto:inquiries@mrtex.info" class="gradient-link">Email</a>
+    </p>
+    <p>House # 05 (2nd Floor), Road # 18, Sector # 10, Uttara, Dhaka-1230, Bangladesh</p>
+</section>
+
 </body>
 </html>
