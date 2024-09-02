@@ -2,4 +2,5 @@ User-agent: *
 Allow: /
 Allow: /about-us
 Allow: /products
+Disallow: /images
 # Nothing here -.-
